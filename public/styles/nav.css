@@ -1,0 +1,28 @@
+nav {
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  font-family: 'Bungee', sans-serif;
+  font-size: 40px;
+  margin-left: 1.5em;
+  margin-bottom: 20px;
+}
+
+.new-tweet-button {
+  font-size: 22px;
+  margin-right: 1.5em;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow {
+  color: red;
+  align-self: center;
+}
