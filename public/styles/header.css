@@ -1,0 +1,22 @@
+header {
+  height: 400px;
+  width: 100%;
+  color: white;
+  background-color:#487E65;
+  background-image: url(../images/header-texture.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.avatar {
+  height: 190px;
+  width: auto;
+}
+
+.header-name {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
