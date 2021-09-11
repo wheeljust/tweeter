@@ -33,3 +33,7 @@
   resize: none;
 }
 
+.invalid {
+  color: red;
+}
+
