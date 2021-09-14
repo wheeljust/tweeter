@@ -39,12 +39,12 @@
       </div>
     </nav>
     <!-- Profile Header -->
-    <header>
+    <header class="profile">
       <div>
           <img class="avatar" src="/images/profile-hex.png"> 
       </div>
       <div>
-          <h2 class="header-name"><strong>Kennedy</strong> Bay</h2>
+          <h2 class="user-name"><strong>Kennedy</strong> Bay</h2>
       </div>
     </header>
 
@@ -54,12 +54,18 @@
         <h2>Compose Tweet</h2>
         <form class="new-tweet-body" method="POST" action="/tweets/">
           <label for="tweet-text">What are you humming about?</label>
-          <textarea class="new-tweet-text" name="text" id="tweet-text"></textarea>
+          <textarea name="text" id="tweet-text"></textarea>
           <div class="new-tweet-util">
-            <button class="new-tweet-button" type="submit">Tweet</button>
+            <button type="submit">Tweet</button>
             <output class="counter" name="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+      <section>
+        <article class="tweet">
+          <header></header>
+          <footer></footer>
+        </article>
       </section>
     </main>
 

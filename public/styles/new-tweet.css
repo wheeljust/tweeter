@@ -18,13 +18,13 @@
   padding-top: 12px;
 }
 
-.new-tweet-button {
+div.new-tweet-util button {
   color: white;
   background-color: #4056A1;
   border: none;
 }
 
-.new-tweet-text {
+form.new-tweet-body textarea {
   background-color: #e5e5e5;
   border: none;
   font-size: 70%;
