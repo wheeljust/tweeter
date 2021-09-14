@@ -21,6 +21,7 @@ nav div {
 
 nav div:hover {
   text-shadow: 3px 3px 4px #2a396a;
+  color: #ffa500
 }
 
 nav i {
@@ -33,4 +34,5 @@ nav i {
   font-size: 40px;
   margin-left: 1.5em;
   margin-bottom: 20px;
+  text-shadow: 3px 3px 4px #2a396a;
 }
