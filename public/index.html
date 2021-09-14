@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -61,19 +62,23 @@
           </div>
         </form>
       </section>
-      <section>
+      <section class=tweet-container>
         <article class="tweet">
           <header>
-            <img src="https://i.imgur.com/nlhLi3I.png">
-            <span>Kennedy</span>
-            <span>@MrsKBay</span>
+            <div>
+              <img src="https://i.imgur.com/nlhLi3I.png">
+              <span>Kennedy</span>
+            </div>
+            <span class="handle">@MrsKBay</span>
           </header>
-          <p>This will eventually be my tweet body! Pretty cool huh?</p>
+          <p>Guess what everyone! I passed my P.Eng exam. WOOOOOOO. Drinks are on me :) </p>
           <footer>
             <time>10 days ago</time>
-            <i class="fas fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-heart"></i>
+            <div>
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
           </footer>
         </article>
       </section>
