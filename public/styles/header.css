@@ -10,12 +10,12 @@ header.profile {
   align-items: center;
 }
 
-.avatar {
+header.profile img {
   height: 190px;
   width: auto;
 }
 
-.user-name {
+header.profile h2 {
   font-weight: normal;
   margin-top: 10px;
   margin-bottom: 18px;

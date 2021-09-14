@@ -3,21 +3,15 @@ nav {
   width: 100%;
   background-color: #4056A1;
   color: #FFFF;
-  position: absolute;
+  position: fixed;
+  top: 0;
   z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.logo {
-  font-family: 'Bungee', sans-serif;
-  font-size: 40px;
-  margin-left: 1.5em;
-  margin-bottom: 20px;
-}
-
-.write-new-tweet {
+nav div {
   font-size: 22px;
   margin-right: 1.5em;
   margin-bottom: 20px;
@@ -25,7 +19,14 @@ nav {
   flex-direction: column;
 }
 
-.arrow {
+nav i {
   color:#ffa500;
   align-self: center;
+}
+
+.logo {
+  font-family: 'Bungee', sans-serif;
+  font-size: 40px;
+  margin-left: 1.5em;
+  margin-bottom: 20px;
 }
