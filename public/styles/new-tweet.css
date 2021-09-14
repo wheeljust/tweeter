@@ -23,7 +23,11 @@ div.new-tweet-util button {
   color: white;
   background-color: #4056A1;
   border: none;
-  box-shadow: 1px 1px 4px 2px #405668;
+  box-shadow: 1px 1px 4px 2px #31437d;
+}
+
+div.new-tweet-util button:hover {
+  background-color: #31437d;
 }
 
 form.new-tweet-body textarea {
