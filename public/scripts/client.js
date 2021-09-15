@@ -7,6 +7,17 @@
 $(document).ready(function() {
   
   /**
+   * 
+   * @param { string } str user entered text string
+   * @returns safe text string by escaping unsafe chars - prevents XSS (cross-site scripting)
+   */
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
+  /**
    * createTweetElement
    * @param { object } tweet
    * @returns { html element } < article >
@@ -21,7 +32,7 @@ $(document).ready(function() {
         </div>
         <span class="handle">${tweet.user.handle}</span>
       </header>
-      <p>${tweet.content.text}</p>
+      <p>${escape(tweet.content.text)}</p>
       <footer>
         <time>${tweet.created_at}</time>
         <div>
@@ -40,9 +51,11 @@ $(document).ready(function() {
    * no return, used to call createTweetElement
    */
   const renderTweets = function(tweets) {
+    $('#tweets-container').empty();
+    
     for (const tweet of tweets) {
       const $newTweet = createTweetElement(tweet);
-      $('#tweets-container').append($newTweet);
+      $('#tweets-container').prepend($newTweet);
     }
   };
 
@@ -62,8 +75,6 @@ $(document).ready(function() {
     });
   };
 
-  loadTweets();
-
   /** Event listener for SUBMIT a form with id="new-tweet"
    * Filters and alerts submit events with no text, or events exceeding character limits
    * Completes an AJAX post request when tweetBody meets the criteria to post
@@ -79,8 +90,13 @@ $(document).ready(function() {
     $.post('/tweets', $tweetBody)
       .then(() => {
         console.log('ajax post is working');
+        loadTweets();
         this.reset();
       });
   });
+
+  // Need to call this function to load all of the tweets whenever the page is refreshed
+  loadTweets();
+
 });
 
