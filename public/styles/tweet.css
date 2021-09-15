@@ -30,6 +30,10 @@ article.tweet div {
   align-items: center;
 }
 
+article.tweet div.user-head {
+  flex: auto;
+}
+
 article.tweet p {
   padding: 0% 2% 0% 2%;
   font-size: 80%;
@@ -37,7 +41,7 @@ article.tweet p {
 
 article.tweet img {
   height: 40px;
-  padding-right: 5%;
+  padding-right: 2%;
 }
 
 article.tweet i {
