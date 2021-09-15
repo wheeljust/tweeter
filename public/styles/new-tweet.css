@@ -1,16 +1,9 @@
-.new-tweet {
+.new-tweet-container {
   display: flex;
   flex-direction: column;
 }
 
-.new-tweet-body {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  margin-bottom: 5%;
-}
-
-.new-tweet-util {
+.tweet-util {
   font-family: "Bungee", sans-serif;
   display: flex;
   justify-content: space-between;
@@ -19,27 +12,34 @@
   padding-top: 12px;
 }
 
-div.new-tweet-util button {
+div.tweet-util button {
   color: white;
   background-color: #4056A1;
   border: none;
   box-shadow: 1px 1px 4px 2px #31437d;
 }
 
-div.new-tweet-util button:hover {
+div.tweet-util button:hover {
   background-color: #31437d;
 }
 
-form.new-tweet-body textarea {
+.invalid {
+  color: red;
+}
+
+#new-tweet {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+#new-tweet textarea {
   background-color: #e5e5e5;
   border: none;
   font-size: 70%;
   font-weight: 600;
   color: #545149;
   resize: none;
-}
-
-.invalid {
-  color: red;
 }
 

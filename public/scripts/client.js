@@ -59,12 +59,39 @@ $(document).ready(function() {
   `);
   };
   
+  /**
+   * renderTweets
+   * @param { array } tweets 'is an array of tweet objects'
+   * no return, used to call createTweetElement
+   */
   const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       const $newTweet = createTweetElement(tweet);
       $('#tweets-container').append($newTweet); 
     }
   }
+
+  const loadTweets = function() {
+
+  };
+
+  loadTweets();
+
+  /** Event listener for New Tweet Submit
+   *  Completes an AJAX post request when triggered
+   */
+  const $form = $("#new-tweet");
+  $form.on("submit", function(event) {
+    event.preventDefault();
+    const $tweetBody = $(this).serialize();
+    
+    $.post('/tweets', $tweetBody)
+      .then((res) => {
+        console.log('ajax post is working');  // do I need this .then()? also where is the $tweetBody data going
+        // loadTweets();
+      });
+
+  });
 
   renderTweets(data);
 
