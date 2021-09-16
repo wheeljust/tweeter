@@ -83,13 +83,23 @@ $(document).ready(function() {
     event.preventDefault();
     const $tweetBody = $(this).serialize();
     const $charCount = 140 - $(".counter").val();
+    const error = $("#error-msg");
+    error.slideUp();
 
-    if (!$charCount) return alert("Opps! Please enter some text for your tweet before posting");
-    if ($charCount > 140) return alert("Opps! Your tweet exceeds the character limit!");
+    if (!$charCount) {
+      error.text("Oops! You forgot to write your tweet, please enter some text first!");
+      error.slideDown();
+      return;
+    };
+
+    if ($charCount > 140) {
+      error.text("Opps! Your tweet exceeds the character limit! Please make it less than 140 characters");
+      error.slideDown();
+      return;
+    };
     
     $.post('/tweets', $tweetBody)
       .then(() => {
-        console.log('ajax post is working');
         loadTweets();
         this.reset();
       });
