@@ -4,6 +4,7 @@ header.profile {
   color: white;
   background-color:#487E65;
   background-image: url(../images/header-texture.png);
+  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

@@ -105,6 +105,16 @@ $(document).ready(function() {
       });
   });
 
+  /**
+   * Event listener for the compose-tweet button in the nav bar
+   * Function toggles the new-tweet container (hide/show), and places the cursor (focus) in the tweet-text box
+   */
+  $("#compose-tweet").on("click", function() {
+    $("#new-tweet-container").slideToggle("fast", function() {
+      $("#tweet-text").focus();
+    });
+  });
+
   // Need to call this function to load all of the tweets whenever the page is refreshed
   loadTweets();
 
