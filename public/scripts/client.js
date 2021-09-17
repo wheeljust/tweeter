@@ -115,6 +115,23 @@ $(document).ready(function() {
     });
   });
 
+  const $floatingButton = $(`
+    <button id="back-to-top" type="button">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+  `);
+
+  $(window).on("scroll", function() {
+    $(".float-button").append($floatingButton);
+    $("#back-to-top").on("click", function() {
+      $(window).scrollTop(0);
+      $("#new-tweet-container").show();
+      $("#tweet-text").focus();
+      console.log("removed button");
+      $("#back-to-top").remove();
+    });
+  });
+
   // Need to call this function to load all of the tweets whenever the page is refreshed
   loadTweets();
 
