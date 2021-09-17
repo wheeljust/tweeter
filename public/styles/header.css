@@ -9,6 +9,7 @@ header.profile {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  text-shadow: 3px 3px 4px #2a396a;
 }
 
 header.profile img {

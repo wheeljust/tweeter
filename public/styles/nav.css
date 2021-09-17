@@ -21,12 +21,12 @@ nav button {
   font-size: 22px;
   margin-right: 1.5em;
   margin-bottom: 20px;
+  text-shadow: 3px 3px 4px #2a396a;
   display: flex;
   flex-direction: column;
 }
 
 nav button:hover {
-  text-shadow: 3px 3px 4px #2a396a;
   color: #ffa500
 }
 
