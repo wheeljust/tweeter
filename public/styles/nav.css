@@ -1,8 +1,7 @@
 nav {
   height: 120px;
   width: 100%;
-  /* background-color: #4056A1; */
-  background-color:#487E65;
+  background-color: #4056A1;
   background-image: url(../images/header-texture.png);
   color: #FFFF;
   position: fixed;
@@ -27,7 +26,7 @@ nav button {
 }
 
 nav button:hover {
-  color: #ffa500
+  color: #ffa500;
 }
 
 nav i {
