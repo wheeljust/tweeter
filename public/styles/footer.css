@@ -32,6 +32,6 @@ main footer button:hover {
   }
 }
 
-main footer i {
-  padding: 5%;
+.hidden {
+  display: none;
 }

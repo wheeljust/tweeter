@@ -115,21 +115,30 @@ $(document).ready(function() {
     });
   });
 
-  const $floatingButton = $(`
-    <button id="back-to-top" type="button">
-      <i class="fas fa-angle-double-up"></i>
-    </button>
-  `);
 
+  $floatingButton = $("#back-to-top");
+    /**
+   * Event listener for scrolling that will display the "#back-to-top" button
+   * Removes the CSS class "hidden" which has a property of display: none;
+   * When the scroll bar is positioned at top of windown, add back hidden class
+   */
   $(window).on("scroll", function() {
-    $(".float-button").append($floatingButton);
-    $("#back-to-top").on("click", function() {
-      $(window).scrollTop(0);
-      $("#new-tweet-container").show();
-      $("#tweet-text").focus();
-      console.log("removed button");
-      $("#back-to-top").remove();
-    });
+    $floatingButton.removeClass("hidden");
+
+    let scrollPos = $(window).scrollTop();
+    if (!scrollPos) {
+      $floatingButton.addClass("hidden");
+    }
+  });
+
+  /**
+   * Event listener for clicking the "#back-to-top" button
+   * On click, the window will scroll to top of page and focus on the new tweet text input box
+   */
+  $floatingButton.on("click", function() {
+    $(window).scrollTop(0);
+    $("#new-tweet-container").show();
+    $("#tweet-text").focus();
   });
 
   // Need to call this function to load all of the tweets whenever the page is refreshed
