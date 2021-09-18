@@ -105,29 +105,32 @@ $(document).ready(function() {
       });
   });
 
+
+  $toTopBtn = $("#back-to-top");
+  $composeBtn = $("#compose-tweet");
   /**
    * Event listener for the compose-tweet button in the nav bar
    * Function toggles the new-tweet container (hide/show), and places the cursor (focus) in the tweet-text box
    */
-  $("#compose-tweet").on("click", function() {
+  $composeBtn.on("click", function() {
     $("#new-tweet-container").slideToggle("fast", function() {
       $("#tweet-text").focus();
     });
   });
 
-
-  $floatingButton = $("#back-to-top");
-    /**
+  /**
    * Event listener for scrolling that will display the "#back-to-top" button
    * Removes the CSS class "hidden" which has a property of display: none;
    * When the scroll bar is positioned at top of windown, add back hidden class
    */
   $(window).on("scroll", function() {
-    $floatingButton.removeClass("hidden");
+    $toTopBtn.removeClass("hidden");
+    $composeBtn.addClass("hidden");
 
     let scrollPos = $(window).scrollTop();
     if (!scrollPos) {
-      $floatingButton.addClass("hidden");
+      $toTopBtn.addClass("hidden");
+      $composeBtn.removeClass("hidden");
     }
   });
 
@@ -135,7 +138,7 @@ $(document).ready(function() {
    * Event listener for clicking the "#back-to-top" button
    * On click, the window will scroll to top of page and focus on the new tweet text input box
    */
-  $floatingButton.on("click", function() {
+  $toTopBtn.on("click", function() {
     $(window).scrollTop(0);
     $("#new-tweet-container").show();
     $("#tweet-text").focus();
