@@ -4,7 +4,7 @@ header.profile {
   color: white;
   background-color: #134e13;
   background-image: url(../images/header-texture.png);
-  margin-bottom: 5%;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -13,12 +13,12 @@ header.profile {
 }
 
 header.profile img {
-  height: 190px;
+  height: 180px;
   width: auto;
 }
 
 header.profile h2 {
   font-weight: normal;
-  margin-top: 10px;
-  margin-bottom: 18px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }

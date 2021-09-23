@@ -35,6 +35,7 @@ nav i {
 .logo {
   font-family: 'Bungee', sans-serif;
   font-size: 40px;
+  padding: 6px;
   margin-left: 1.5em;
   margin-bottom: 20px;
   text-shadow: 3px 3px 4px #2a396a;
@@ -49,6 +50,3 @@ nav i {
     transform: translateY(5px);
   }
 }
-
-
-/* background-color: #4056A1; */
