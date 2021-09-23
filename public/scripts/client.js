@@ -69,7 +69,6 @@ $(document).ready(function() {
       url: "/tweets",
       dataType: "json",
       success: (tweets) => {
-        console.log(tweets); // remove later
         renderTweets(tweets);
       }
     });

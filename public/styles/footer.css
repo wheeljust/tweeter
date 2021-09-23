@@ -2,8 +2,8 @@ main footer.float-button {
   display: flex;
   flex-direction: row-reverse;
   position: fixed;
-  bottom: 2%;
-  right: 5%;
+  bottom: 20px;
+  right: 55px;
   z-index: 10;
 }
 
