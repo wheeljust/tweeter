@@ -11,10 +11,10 @@ __Author:__ [@wheeljust](https://github.com/wheeljust/)
 
 ## Final Product:
 
-!["Desktop view - top"](https://github.com/wheeljust/tweeter/blob/master/public/images/desktopview-top.png?raw=true)
-!["Desktop view - btm"](https://github.com/wheeljust/tweeter/blob/master/public/images/desktopview-btm.png?raw=true)
-!["Mobile view - top"](https://github.com/wheeljust/tweeter/blob/master/public/images/mobileview-top.png?raw=true)
-!["Mobile view - btm"](https://github.com/wheeljust/tweeter/blob/master/public/images/mobileview-btm.png?raw=true)
+!["Desktop view - top"](https://github.com/wheeljust/tweeter/blob/master/docs/desktopview-top.png?raw=true)
+!["Desktop view - btm"](https://github.com/wheeljust/tweeter/blob/master/docs/desktopview-btm.png?raw=true)
+!["Mobile view - top"](https://github.com/wheeljust/tweeter/blob/master/docs/mobileview-top.png?raw=true)
+!["Mobile view - btm"](https://github.com/wheeljust/tweeter/blob/master/docs/mobileview-btm.png?raw=true)
 
 
 ## Getting Started:
