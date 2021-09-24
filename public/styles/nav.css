@@ -1,23 +1,29 @@
 nav {
   height: 120px;
   width: 100%;
+  padding: 0px 1.5em;
   color: #FFFF;
   position: fixed;
   top: 0;
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+}
+
+nav span.logo {
+  font-family: 'Bungee', sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  text-shadow: 3px 3px 4px #2a396a;
 }
 
 nav button {
   background-color: transparent;
   border: none;
   color: white;
-  padding: 6px;
+  padding: 10px;
   font-size: 22px;
-  margin-right: 1.5em;
-  margin-bottom: 20px;
   text-shadow: 3px 3px 4px #2a396a;
   display: flex;
   flex-direction: column;
@@ -29,16 +35,8 @@ nav button:hover {
 
 nav i {
   color:#ffa500;
+  opacity: 80%;
   align-self: center;
-}
-
-.logo {
-  font-family: 'Bungee', sans-serif;
-  font-size: 40px;
-  padding: 6px;
-  margin-left: 1.5em;
-  margin-bottom: 20px;
-  text-shadow: 3px 3px 4px #2a396a;
 }
 
 .bounce {

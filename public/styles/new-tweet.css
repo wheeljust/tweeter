@@ -1,6 +1,27 @@
-#new-tweet-container {
+.new-tweet-container {
   display: flex;
   flex-direction: column;
+}
+
+#new-tweet {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#new-tweet textarea {
+  background-color: #e5e5e5;
+  border: none;
+  font-size: 70%;
+  font-weight: 600;
+  color: #545149;
+  resize: none;
+}
+
+.error-msg {
+  color: #ff3f3f;
+  font-size: medium;
 }
 
 .tweet-util {
@@ -20,31 +41,10 @@ div.tweet-util button {
 }
 
 div.tweet-util button:hover {
-  background-color: #31437d;
+  background-color: #ffa500;
+  opacity: 70%;
 }
 
 .invalid {
   color: #ff3f3f;
 }
-
-#error-msg {
-  color: #ff3f3f;
-  font-size: medium;
-}
-
-#new-tweet {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  margin-bottom: 5%;
-}
-
-#new-tweet textarea {
-  background-color: #e5e5e5;
-  border: none;
-  font-size: 70%;
-  font-weight: 600;
-  color: #545149;
-  resize: none;
-}
-

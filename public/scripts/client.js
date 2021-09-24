@@ -35,7 +35,7 @@ $(document).ready(function() {
       <p>${escape(tweet.content.text)}</p>
       <footer>
         <time>${timeago.format(tweet.created_at)}</time>
-        <div>
+        <div class="icons">
           <i class="fas fa-flag"></i>
           <i class="fas fa-retweet"></i>
           <i class="fas fa-heart"></i>
@@ -51,11 +51,11 @@ $(document).ready(function() {
    * no return, used to call createTweetElement
    */
   const renderTweets = function(tweets) {
-    $('#tweets-container').empty();
+    $('.tweets-container').empty();
     
     for (const tweet of tweets) {
       const $newTweet = createTweetElement(tweet);
-      $('#tweets-container').prepend($newTweet);
+      $('.tweets-container').prepend($newTweet);
     }
   };
 
@@ -76,13 +76,13 @@ $(document).ready(function() {
 
   /** Event listener for SUBMIT a form with id="new-tweet"
    * Filters and alerts submit events with no text, or events exceeding character limits
-   * Completes an AJAX post request when tweetBody meets the criteria to post
+   * Completes an AJAX post request when tweetBody meets the input criteria for a valid post
    */
   $("#new-tweet").on("submit", function(event) {
     event.preventDefault();
     const $tweetBody = $(this).serialize();
     const $charCount = 140 - $(".counter").val();
-    const error = $("#error-msg");
+    const error = $(".error-msg");
     error.slideUp();
 
     if (!$charCount) {
@@ -112,7 +112,7 @@ $(document).ready(function() {
    * Function toggles the new-tweet container (hide/show), and places the cursor (focus) in the tweet-text box
    */
   $composeBtn.on("click", function() {
-    $("#new-tweet-container").slideToggle("fast", function() {
+    $(".new-tweet-container").slideToggle("fast", function() {
       $("#tweet-text").focus();
     });
   });
@@ -139,7 +139,7 @@ $(document).ready(function() {
    */
   $toTopBtn.on("click", function() {
     $(window).scrollTop(0);
-    $("#new-tweet-container").show();
+    $(".new-tweet-container").show();
     $("#tweet-text").focus();
   });
 

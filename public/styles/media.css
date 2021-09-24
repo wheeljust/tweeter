@@ -3,28 +3,26 @@
     background-color: #4056A1;
   }
   
-  main.container {
-    margin: 0px 0px;
-    width: 66.7%;
-  } 
-  
   div.page-content {
-    margin: 200px 60px; 
+    margin: 180px 60px; 
     display: flex;
     justify-content: space-between;
    }
 
-   header.profile {
-     justify-content: center;
-     width: 33.3%;
-     min-width: 300px;
-     margin-right: 100px;
-     border-radius: 10%;
-     box-shadow: 4px 4px 3px 1px grey;
-   }
+  main.container {
+    margin: 0px 0px;
+    width: 66.7%;
+  } 
 
-   header.profile h2 {
-    margin-bottom: 0px;
+  header.profile {
+    justify-content: center;
+    width: 33.3%;
+    margin-right: 80px;
+    border-radius: 10%;
+    box-shadow: 4px 4px 3px 1px grey;
   }
 
- }
+  header.profile h2 {
+    margin-bottom: 0px;
+  }
+}

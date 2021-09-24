@@ -13,12 +13,13 @@ header.profile {
 }
 
 header.profile img {
-  height: 180px;
+  height: 170px;
   width: auto;
 }
 
 header.profile h2 {
   font-weight: normal;
+  font-size: 30px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
