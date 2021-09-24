@@ -1,17 +1,16 @@
 /*
- * Client-side JS logic goes here
+ * Client-side JS logic
  * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
 $(document).ready(function() {
   
   /**
-   * 
+   *
    * @param { string } str user entered text string
    * @returns safe text string by escaping unsafe chars - prevents XSS (cross-site scripting)
    */
-  const escape = function (str) {
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
@@ -89,13 +88,13 @@ $(document).ready(function() {
       error.text("Oops! You forgot to write your tweet, please enter some text first!");
       error.slideDown();
       return;
-    };
+    }
 
     if ($charCount > 140) {
       error.text("Opps! Your tweet exceeds the character limit! Please make it less than 140 characters");
       error.slideDown();
       return;
-    };
+    }
     
     $.post('/tweets', $tweetBody)
       .then(() => {
@@ -105,8 +104,8 @@ $(document).ready(function() {
   });
 
 
-  $toTopBtn = $("#back-to-top");
-  $composeBtn = $("#compose-tweet");
+  const $toTopBtn = $("#back-to-top");
+  const $composeBtn = $("#compose-tweet");
   /**
    * Event listener for the compose-tweet button in the nav bar
    * Function toggles the new-tweet container (hide/show), and places the cursor (focus) in the tweet-text box
