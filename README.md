@@ -1,8 +1,7 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple single-page AJAX based, Twitter clone. Tweeter uses uses jQuerry, HTML5, and CSS3.  This web app was created as a development project while studying web development at Lighthouse Labs.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 
 ## Getting Started
 
@@ -13,5 +12,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
-- Express
 - Node 5.10.x or above
+- Express
+- body-parser 1.15.2 or above
+- chance 1.0.2 or above
+- md5 2.1.0 or above
