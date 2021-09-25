@@ -1,34 +1,29 @@
-main footer.float-button {
+@use 'colors';
+@use 'mixins';
+
+main footer.floating {
   display: flex;
   flex-direction: row-reverse;
   position: fixed;
   bottom: 20px;
   right: 55px;
   z-index: 10;
-}
-
-main footer button {
-  height: 85px;
-  width: 85px;
-  font-size: 50px;
-  background-color: #4056A1;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  opacity: 70%;
-  text-shadow: 3px 3px 4px #2a396a;
-  box-shadow: 4px 4px 3px 1px #2a396a;
-  animation: bounce 1s infinite;
-}
-
-main footer button:hover {
-  background-color: #ffa500;
-  color: white;
-}
-
-@keyframes bounce {
-  50% {
-    transform: translateY(3px);
+  
+  button {
+    background-color: colors.$prim-theme;
+    color: colors.$light-txt;
+    height: 85px;
+    width: 85px;
+    font-size: 50px;
+    border: none;
+    border-radius: 50%;
+    opacity: 70%;
+    box-shadow: 4px 4px 3px 1px colors.$prim-shadow;
+    @include mixins.objBounce($translation: 3px);
+  }
+  
+  button:hover {
+    background-color: colors.$sec-theme;
   }
 }
 

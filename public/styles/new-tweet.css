@@ -9,40 +9,37 @@
   font-weight: bold;
   margin-bottom: 40px;
 }
-
 #new-tweet textarea {
   background-color: #e5e5e5;
-  border: none;
+  color: #545149;
   font-size: 70%;
   font-weight: 600;
-  color: #545149;
+  border: none;
   resize: none;
+}
+
+div.tweet-util {
+  font-family: "Bungee", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 4px solid;
+  margin-top: 12px;
+}
+div.tweet-util button {
+  background-color: #4056A1;
+  color: #ffffff;
+  border: none;
+  box-shadow: 1px 1px 4px 2px #2a396a;
+}
+div.tweet-util button:hover {
+  background-color: #ffa500;
+  opacity: 70%;
 }
 
 .error-msg {
   color: #ff3f3f;
   font-size: medium;
-}
-
-.tweet-util {
-  font-family: "Bungee", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 12px;
-  border-top: 4px solid;
-  padding-top: 12px;
-}
-
-div.tweet-util button {
-  color: white;
-  background-color: #4056A1;
-  border: none;
-  box-shadow: 1px 1px 4px 2px #31437d;
-}
-
-div.tweet-util button:hover {
-  background-color: #ffa500;
-  opacity: 70%;
 }
 
 .invalid {

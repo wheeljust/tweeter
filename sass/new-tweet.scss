@@ -1,3 +1,5 @@
+@use 'colors';
+
 .new-tweet-container {
   display: flex;
   flex-direction: column;
@@ -8,43 +10,43 @@
   flex-direction: column;
   font-weight: bold;
   margin-bottom: 40px;
+  
+  textarea {
+    background-color: colors.$prim-bg;
+    color: colors.$dark-txt;
+    font-size: 70%;
+    font-weight: 600;
+    border: none;
+    resize: none;
+  }
 }
 
-#new-tweet textarea {
-  background-color: #e5e5e5;
-  border: none;
-  font-size: 70%;
-  font-weight: 600;
-  color: #545149;
-  resize: none;
-}
-
-.error-msg {
-  color: #ff3f3f;
-  font-size: medium;
-}
-
-.tweet-util {
+div.tweet-util {
   font-family: "Bungee", sans-serif;
   display: flex;
   justify-content: space-between;
-  margin-top: 12px;
-  border-top: 4px solid;
   padding-top: 12px;
+  border-top: 4px solid;
+  margin-top: 12px;
+  
+  button {
+    background-color: colors.$prim-theme;
+    color:colors.$light-txt;
+    border: none;
+    box-shadow: 1px 1px 4px 2px colors.$prim-shadow;
+  }
+  
+  button:hover {
+    background-color: colors.$sec-theme;
+    opacity: 70%;
+  }
 }
 
-div.tweet-util button {
-  color: white;
-  background-color: #4056A1;
-  border: none;
-  box-shadow: 1px 1px 4px 2px #31437d;
-}
-
-div.tweet-util button:hover {
-  background-color: #ffa500;
-  opacity: 70%;
+.error-msg {
+  color: colors.$danger;
+  font-size: medium;
 }
 
 .invalid {
-  color: #ff3f3f;
+  color: colors.$danger;
 }

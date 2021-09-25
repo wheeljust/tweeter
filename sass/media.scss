@@ -1,6 +1,8 @@
+@use 'colors';
+
 @media screen and (min-width: 1024px) {
   nav {
-    background-color: #4056A1;
+    background-color: colors.$prim-theme;
   }
   
   div.page-content {
@@ -19,7 +21,7 @@
     width: 33.3%;
     margin-right: 80px;
     border-radius: 10%;
-    box-shadow: 4px 4px 3px 1px grey;
+    box-shadow: 4px 4px 3px 1px colors.$sec-shadow;
   }
 
   header.profile h2 {

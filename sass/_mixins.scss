@@ -1,0 +1,9 @@
+// Use to animate features with bounce motion
+@mixin objBounce($time: 1s, $translation: 5px) {
+  animation: bounce  $time infinite;
+  @keyframes bounce {
+    50% {
+      transform: translateY($translation);
+    }
+  }
+}

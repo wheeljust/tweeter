@@ -3,7 +3,9 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ @use 'colors';
+
+ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -16,14 +18,14 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #e5e5e5;
+  color: colors.$dark-txt;
+  background-color: colors.$prim-bg;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 main.container {
-  background-color: #e5e5e5;
+  background-color: colors.$prim-bg;
   margin-left: 50px;
   margin-right: 50px;
 }

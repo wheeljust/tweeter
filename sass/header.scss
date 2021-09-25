@@ -1,25 +1,27 @@
+@use 'colors';
+
 header.profile {
   height: 400px;
   width: 100%;
-  color: white;
-  background-color: #134e13;
+  color: colors.$light-txt;
+  background-color: colors.$sec-bg;
   background-image: url(../images/header-texture.png);
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  text-shadow: 3px 3px 4px #2a396a;
-}
-
-header.profile img {
-  height: 170px;
-  width: auto;
-}
-
-header.profile h2 {
-  font-weight: normal;
-  font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  text-shadow: 3px 3px 4px colors.$prim-shadow;
+  
+  img {
+    height: 170px;
+    width: auto;
+  }
+  
+  h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }

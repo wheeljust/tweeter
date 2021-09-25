@@ -1,50 +1,44 @@
+@use 'colors';
+@use 'mixins';
+
 nav {
   height: 120px;
   width: 100%;
   padding: 0px 1.5em;
-  color: #FFFF;
+  color: colors.$light-txt;
   position: fixed;
   top: 0;
   z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: colors.$light-txt;
+    padding: 10px;
+    font-size: 22px;
+    text-shadow: 3px 3px 4px colors.$prim-shadow;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button:hover {
+    color: colors.$sec-theme;
+  }
+  
+  i {
+    color: colors.$sec-theme;
+    opacity: 80%;
+    align-self: center;
+    @include mixins.objBounce;
+  }
 }
 
-nav span.logo {
+.logo {
   font-family: 'Bungee', sans-serif;
   font-size: 40px;
   padding: 10px;
-  text-shadow: 3px 3px 4px #2a396a;
-}
-
-nav button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  padding: 10px;
-  font-size: 22px;
-  text-shadow: 3px 3px 4px #2a396a;
-  display: flex;
-  flex-direction: column;
-}
-
-nav button:hover {
-  color: #ffa500;
-}
-
-nav i {
-  color:#ffa500;
-  opacity: 80%;
-  align-self: center;
-}
-
-.bounce {
-  animation: bounce  1s infinite;
-}
-
-@keyframes bounce {
-  50% {
-    transform: translateY(5px);
-  }
+  text-shadow: 3px 3px 4px colors.$prim-shadow;
 }

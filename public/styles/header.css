@@ -1,7 +1,7 @@
 header.profile {
   height: 400px;
   width: 100%;
-  color: white;
+  color: #ffffff;
   background-color: #134e13;
   background-image: url(../images/header-texture.png);
   margin-bottom: 40px;
@@ -11,12 +11,10 @@ header.profile {
   align-items: center;
   text-shadow: 3px 3px 4px #2a396a;
 }
-
 header.profile img {
   height: 170px;
   width: auto;
 }
-
 header.profile h2 {
   font-weight: normal;
   font-size: 30px;
