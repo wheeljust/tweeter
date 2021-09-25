@@ -7,7 +7,6 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -15,11 +14,12 @@ html {
 /*
  * Global layout
  */
+
 body {
   color: #545149;
   background-color: #e5e5e5;
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 main.container {
