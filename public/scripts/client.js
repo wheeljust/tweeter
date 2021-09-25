@@ -137,7 +137,7 @@ $(document).ready(function() {
    * On click, the window will scroll to top of page and focus on the new tweet text input box
    */
   $toTopBtn.on("click", function() {
-    $(window).scrollTop(0);
+    window.scrollTo( { top: 0 } );
     $(".new-tweet-container").show();
     $("#tweet-text").focus();
   });
