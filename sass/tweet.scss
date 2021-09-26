@@ -1,9 +1,9 @@
 @use 'colors';
 
 article.tweet {
+  padding: 16px;
   border: solid 4px colors.$prim-border;
   margin: 16px 0px;
-  padding: 16px;
 
   &:hover {
     box-shadow: 4px 4px 3px 1px colors.$sec-shadow;
@@ -28,16 +28,16 @@ article.tweet {
   }
 
   p {
-    margin: 18px 12px;
     font-size: 18px;
+    margin: 18px 12px;
     word-wrap: break-word;
   }
   
   footer {
-    border-top: solid 4px colors.$prim-border;
-    padding: 12px 12px 0px 12px;
     font-size: 14px;
     font-weight: bold;
+    padding: 12px 12px 0px 12px;
+    border-top: solid 4px colors.$prim-border;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ article.tweet {
   }
 }
 
-.user-head {
+.user-info {
   flex: auto;
 }
 

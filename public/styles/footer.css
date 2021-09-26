@@ -7,7 +7,7 @@ main footer.floating {
   z-index: 10;
 }
 main footer.floating button {
-  background-color: #4056A1;
+  background-color: #0b2c0b;
   color: #ffffff;
   height: 85px;
   width: 85px;
@@ -15,7 +15,7 @@ main footer.floating button {
   border: none;
   border-radius: 50%;
   opacity: 70%;
-  box-shadow: 4px 4px 3px 1px #2a396a;
+  box-shadow: 4px 4px 3px 1px #0f3c0f;
   animation: bounce 1s infinite;
 }
 @keyframes bounce {
@@ -24,7 +24,8 @@ main footer.floating button {
   }
 }
 main footer.floating button:hover {
-  background-color: #ffa500;
+  background-color: #8a6347;
+  box-shadow: 4px 4px 3px 1px #8a6347;
 }
 
 .hidden {

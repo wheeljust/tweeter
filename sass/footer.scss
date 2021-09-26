@@ -24,6 +24,7 @@ main footer.floating {
   
   button:hover {
     background-color: colors.$sec-theme;
+    box-shadow: 4px 4px 3px 1px colors.$sec-theme;
   }
 }
 

@@ -38,15 +38,20 @@ div.tweet-util {
   
   button:hover {
     background-color: colors.$sec-theme;
+    box-shadow: 4px 4px 3px 1px colors.$sec-theme;
     opacity: 70%;
   }
 }
 
-.error-msg {
+%error {
   color: colors.$danger;
-  font-size: medium;
 }
 
 .invalid {
-  color: colors.$danger;
+  @extend %error;
+}
+
+.error-msg {
+  @extend %error;
+  font-size: medium;
 }

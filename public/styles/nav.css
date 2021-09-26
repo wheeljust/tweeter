@@ -16,15 +16,15 @@ nav button {
   color: #ffffff;
   padding: 10px;
   font-size: 22px;
-  text-shadow: 3px 3px 4px #2a396a;
+  text-shadow: 3px 3px 4px #0f3c0f;
   display: flex;
   flex-direction: column;
 }
 nav button:hover {
-  color: #ffa500;
+  color: #8a6347;
 }
 nav i {
-  color: #ffa500;
+  color: #8a6347;
   opacity: 80%;
   align-self: center;
   animation: bounce 1s infinite;
@@ -39,5 +39,5 @@ nav i {
   font-family: "Bungee", sans-serif;
   font-size: 40px;
   padding: 10px;
-  text-shadow: 3px 3px 4px #2a396a;
+  text-shadow: 3px 3px 4px #0f3c0f;
 }

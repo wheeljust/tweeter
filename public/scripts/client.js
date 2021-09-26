@@ -25,7 +25,7 @@ $(document).ready(function() {
     return $(`
     <article class="tweet">
       <header>
-        <div class="user-head">
+        <div class="user-info">
           <img src="${tweet.user.avatars}">
           <span>${tweet.user.name}</span>
         </div>

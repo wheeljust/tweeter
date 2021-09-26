@@ -27,21 +27,21 @@ div.tweet-util {
   margin-top: 12px;
 }
 div.tweet-util button {
-  background-color: #4056A1;
+  background-color: #0b2c0b;
   color: #ffffff;
   border: none;
-  box-shadow: 1px 1px 4px 2px #2a396a;
+  box-shadow: 1px 1px 4px 2px #0f3c0f;
 }
 div.tweet-util button:hover {
-  background-color: #ffa500;
+  background-color: #8a6347;
+  box-shadow: 4px 4px 3px 1px #8a6347;
   opacity: 70%;
 }
 
-.error-msg {
+.error-msg, .invalid {
   color: #ff3f3f;
-  font-size: medium;
 }
 
-.invalid {
-  color: #ff3f3f;
+.error-msg {
+  font-size: medium;
 }

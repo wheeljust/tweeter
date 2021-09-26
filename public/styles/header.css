@@ -2,14 +2,14 @@ header.profile {
   height: 400px;
   width: 100%;
   color: #ffffff;
-  background-color: #134e13;
+  background-color: #803500;
   background-image: url(../images/header-texture.png);
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  text-shadow: 3px 3px 4px #2a396a;
+  text-shadow: 3px 3px 4px #0f3c0f;
 }
 header.profile img {
   height: 170px;
