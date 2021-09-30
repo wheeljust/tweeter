@@ -3,18 +3,9 @@
  * jQuery is already loaded
  */
 
-$(document).ready(function() {
+import { escape } from './helpers.js';
 
-  /**
-   *
-   * @param { string } str user entered text string
-   * @returns safe text string by escaping unsafe chars - prevents XSS (cross-site scripting)
-   */
-   const escape = function(str) {
-    let div = document.createElement("div");
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
-  };
+$(document).ready(function() {
 
   /**
    * createTweetElement
@@ -23,24 +14,24 @@ $(document).ready(function() {
    */
   const createTweetElement = function(tweet) {
     return $(`
-    <article class="tweet">
-      <header>
-        <div class="user-info">
-          <img src="${tweet.user.avatars}">
-          <span>${tweet.user.name}</span>
-        </div>
-        <span class="handle">${tweet.user.handle}</span>
-      </header>
-      <p>${escape(tweet.content.text)}</p>
-      <footer>
-        <time>${timeago.format(tweet.created_at)}</time>
-        <div class="icons">
-          <i class="fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="fas fa-heart"></i>
-        </div>
-      </footer>
-    </article>
+      <article class="tweet">
+        <header>
+          <div class="user-info">
+            <img src="${tweet.user.avatars}">
+            <span>${tweet.user.name}</span>
+          </div>
+          <span class="handle">${tweet.user.handle}</span>
+        </header>
+        <p>${escape(tweet.content.text)}</p>
+        <footer>
+          <time>${timeago.format(tweet.created_at)}</time>
+          <div class="icons">
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
     `);
   };
   
