@@ -1,9 +1,23 @@
-$(document).ready(function() {
+// This is a more common syntax for writing the document.ready statement
+// Note: good practice to only call event listeners inside the document.ready, and declare functions outside.
 
-  $("#tweet-text").on("keyup", function() {
-    const charRemaining = 140 - $(this).val().length;
-    $(".counter").val(charRemaining);
-    (charRemaining < 0) ? $(".counter").addClass("invalid") : $(".counter").removeClass("invalid");
-  });
+$(function() {
+
+  $("#tweet-text").on("input", onTextInput);
 
 });
+
+const onTextInput = function() {
+
+  let $len = $(this).val().length;
+  const charRemaining = 140 - $len;
+
+  const $counter = $(".counter");
+  $counter.val(charRemaining);
+
+  if (charRemaining < 0) {
+    return $counter.addClass("invalid");
+  }
+  $counter.removeClass("invalid");
+
+};
