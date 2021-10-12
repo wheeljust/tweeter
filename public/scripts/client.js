@@ -54,14 +54,10 @@ $(document).ready(function() {
    * Perfoms an AJAX get request to /tweets and then calls renderTweets function
    */
   const loadTweets = function() {
-    $.ajax({
-      method: "GET",
-      url: "/tweets",
-      dataType: "json",
-      success: (tweets) => {
+    $.get("/tweets", "json")
+      .then((tweets) => {
         renderTweets(tweets);
-      }
-    });
+      });
   };
 
   /** Event listener for SUBMIT a form with id="new-tweet"
